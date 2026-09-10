@@ -6,7 +6,8 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 7 * * *'  # 中国時間 15:00 = UTC 7:00
+    # 毎週金曜日 中国時間 13:30（UTC 5:30）
+    - cron: '30 5 * * 5'
   workflow_dispatch:
 
 jobs:
